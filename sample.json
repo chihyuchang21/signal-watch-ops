@@ -1,0 +1,7 @@
+{
+  "requests_per_min": 320,
+  "error_rate": 0.015,
+  "p95_latency_ms": 140,
+  "cpu_utilization": 48.0,
+  "mem_utilization": 62.0
+}

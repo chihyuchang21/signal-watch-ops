@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.venv/
+.env
+.env.*
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data & Artifacts
+artifacts/
+data/*.parquet
+data/*.npy
+
+# OS
+.DS_Store
+Thumbs.db
