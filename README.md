@@ -11,7 +11,7 @@ It includes:
 ### 1) Create a virtual environment and install deps
 Windows (PowerShell):
 ```
-py -m venv .venv
+python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
 ```
@@ -42,6 +42,9 @@ uvicorn src.api.main:app --reload
 ```
 curl -X POST "http://127.0.0.1:8000/predict" -H "Content-Type: application/json" -d @sample.json
 ```
+Or Open the browser at http://127.0.0.1:8000/docs
+ (it has an interactive Swagger UI)
+
 
 Where `sample.json`:
 ```json
@@ -71,3 +74,6 @@ tests/                       # (placeholder) tests
 - Add streaming ingestion (Kafka) + online scoring
 - Hook to Slack/Jira for alerting and incident tickets
 - Add LLM agent service for root-cause suggestions
+
+## References
+[資料科學應用分享：異常檢測 Isolation Forest](https://shorturl.at/XkGsg)
